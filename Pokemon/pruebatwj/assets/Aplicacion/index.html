@@ -1,0 +1,39 @@
+<DOCTYPE! html>
+  <html ng-app="pokemon">
+
+  <head>
+    <link rel="stylesheet" href="Librerias/CSS/css/bootstrap.css">
+    <title>Pokemon</title>
+  </head>
+  <!--        APLICACION-->
+
+  <body>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-sm-12" align="center" style="background-color: #A9BCF5;">
+              <h1> <a href="#/">MENU</a></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div ui-view></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--        LIBRERIA ANGULAR   "ctrl+/"-->
+    <script src="Librerias/Javascript/angular.min.js"></script>
+    <!--        MODULOS DE LA LIBRERIA ANGULAR-->
+    <script src="Librerias/Javascript/angular-ui-router.js"></script>
+
+    <!--        APLICACION (EN NUESTRO CASO LA APLICACION SE LLAMA 'chuma')-->
+    <script src="app.js"></script>
+    <!--        CONTROLADORES -->
+    <script src="Vistas/InicioCtrl.js"></script>
+    <script src="Vistas/PokemonCtrl.js"></script>
+  </body>
+  </html>
