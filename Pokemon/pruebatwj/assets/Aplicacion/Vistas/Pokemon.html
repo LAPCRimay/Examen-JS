@@ -15,7 +15,8 @@
       </div>
       <div class="form-group">
         <label>Descripción : </label>
-        <input class="form-control" type="text" ng-model="nuevoPokemon.descripcion" required>
+            <textarea class="form-control" ng-model="nuevoPokemon.descripcion" required>
+            </textarea>
       </div>
 
       <div class="form-group">
@@ -105,21 +106,7 @@
             <button class="btn btn-block btn-warning" ng-click="pokemon.mostrar = !pokemon.mostrar">Editar</button>
           </div>
         </div>
-        <!--<div>
-  <IMG ng-src={{pokemon.imagen}} ALT="Obra de K. Haring">
-</div>
-        <h4>Pokemon N°{{pokemon.numeroPokemon}}: {{pokemon.nombre}}</h4>
-        <p>{{pokemon.descripcion}}</p>
-        <p>Color: {{pokemon.color}}</p>
-        <p>Habilidad: {{pokemon.habilidad}}</p>
-        <p>Habilidad Oculta: {{pokemon.habilidadOculta}}</p>
-        <p>Velocidad: {{pokemon.velocidad}}</p>
-        <p>Fortaleza: {{pokemon.fortaleza}}</p>
-        <p>Precisión: {{pokemon.precision}}</p>
-        <p>Resistencia: {{pokemon.resistencia}}</p>
-        <p>Salto: {{pokemon.salto}}</p>
-        <button class="btn btn-block btn-warning" ng-click="pokemon.mostrar = !pokemon.mostrar">Editar</button>
-        -->
+
       </div>
 
       <div ng-hide="pokemon.mostrar">
@@ -130,7 +117,8 @@
           </div>
           <div class="form-group">
             <label>Descripción : </label>
-            <input class="form-control" type="text" ng-model="pokemon.descripcion" required>
+            <textarea class="form-control" ng-model="pokemon.descripcion" required>
+            </textarea>
           </div>
 
           <div class="form-group">
